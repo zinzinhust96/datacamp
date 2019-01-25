@@ -1,5 +1,5 @@
 '''
-Function with variable-length arguments (*args)
+Function with variable-length arguments (-args)
 100xp
 
 Flexible arguments enable you to pass a variable number of arguments to a function.
@@ -15,7 +15,7 @@ a tuple.
 
 Instructions
 -Complete the function header with the function name gibberish. It accepts a single flexible
-argument *args.
+argument -args.
 -Initialize a variable hodgepodge to an empty string.
 -Return the variable hodgepodge at the end of the function body.
 -Call gibberish() with the single string, "luke". Assign the result to one_word.
@@ -23,8 +23,8 @@ argument *args.
 to the Shell.
 '''
 # Define gibberish
-def gibberish(*args):
-    """Concatenate strings in *args together."""
+def gibberish(-args):
+    """Concatenate strings in -args together."""
 
     # Initialize an empty string: hodgepodge
     hodgepodge = ""
