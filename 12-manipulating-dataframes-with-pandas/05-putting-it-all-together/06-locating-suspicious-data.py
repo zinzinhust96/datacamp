@@ -15,7 +15,7 @@ Print suspect. This has been done for you, so hit 'Submit Answer' to see the res
 sus = (medals.Event_gender == 'W') & (medals.Gender == 'Men')
 
 # Create a DataFrame with the suspicious row: suspect
-suspect = medals[(medals.Event_gender == 'W') & (medals.Gender == 'Men')]
+suspect = medals[sus]
 
 # Print suspect
 print(suspect)
