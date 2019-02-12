@@ -19,5 +19,5 @@ house = [["hallway", 11.25],
          ["bathroom", 9.50]]
          
 # Build a for loop from scratch
-for key, value in house:
-    print("the " + str(key) + " is " + str(value) + " sqm")
+for room, area in house :
+    print("the " + str(room) + " is " + str(area) + " sqm")
