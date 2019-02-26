@@ -12,7 +12,7 @@ The iterable in your list comprehension is the all the nodes in T, accessed usin
 Print the degrees.
 '''
 # Compute the degree of every node: degrees
-degrees = [len(T.neighbors(n)) for n in T.nodes()]
+degrees = [len(list(T.neighbors(n))) for n in T.nodes()]
 
 # Print the degrees
 print(degrees)

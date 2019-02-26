@@ -27,7 +27,7 @@ plt.show()
 
 # Plot a histogram of the degree distribution of the graph
 plt.figure()
-plt.hist([len(T.neighbors(n)) for n in T.nodes()])
+plt.hist([len(list(T.neighbors(n))) for n in T.nodes()])
 plt.show()
 
 # Plot a scatter plot of the centrality distribution and the degree distribution
