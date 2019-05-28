@@ -41,7 +41,7 @@ def count_entries(df, *args):
         col = df[col_name]
     
         # Iterate over the column in DataFrame
-        for entry in args:
+        for entry in col:
     
             # If entry is in cols_count, add 1
             if entry in cols_count.keys():
