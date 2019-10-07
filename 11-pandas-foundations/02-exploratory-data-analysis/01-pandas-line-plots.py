@@ -1,5 +1,5 @@
 '''
-pandas line plots
+pandas line plot
 
 In the previous chapter, you saw that the .plot() method will place the Index values on the x-axis by default. In this exercise, you'll practice making line plots with specific columns on the x and y axes.
 
