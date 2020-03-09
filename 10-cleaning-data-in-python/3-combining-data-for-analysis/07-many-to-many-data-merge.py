@@ -15,11 +15,18 @@ INSTRUCTIONS
 -Merge the m2m and survey DataFrames on the 'ident' column of m2m and 'taken' column of survey.
 -Hit 'Submit Answer' to print the first 20 lines of the merged DataFrame!
 '''
-# Merge site and visited: m2m
-m2o = pd.merge(left=site, right=visited, left_on='name', right_on='site')
+# Merge survey, visited and site to a single data frame
+# of surveys with visit and site details
 
-# Merge m2m and survey: m2m
-m2m = pd.merge(left=m2o, right=survey, left_on='ident', right_on='taken')
+# Merge survey and visited on visit IDs
+survey_with_visits = pd.merge(survey, visited, left_on='taken', right_on='ident')
+# or 
+# survey_with_visits = survey.merge(visited, left_on='taken', right_on='ident')
 
-# Print the first 20 lines of m2m
-print(m2m.head(20))
+# Merge previous result with site on site IDs: m2m
+m2m = pd.merge(survey_with_visits, site, left_on='site', right_on='name')
+# or 
+# m2m = survey_with_visits.merge(site, left_on='site', right_on = 'name')
+
+# Print m2m
+print(m2m)
