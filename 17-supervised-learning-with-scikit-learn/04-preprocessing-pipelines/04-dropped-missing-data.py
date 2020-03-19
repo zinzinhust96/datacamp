@@ -16,7 +16,7 @@ Drop the rows with missing values from df using .dropna().
 Hit 'Submit Answer' to see how many rows were lost by dropping the missing values.
 '''
 # Convert '?' to NaN
-df[df == '?'] = np.NaN
+df[df == '?'] = np.nan
 
 # Print the number of NaNs
 print(df.isnull().sum())
